@@ -20,6 +20,7 @@
 #include "am_mcu_apollo.h"
 #include "am_bsp.h"
 #include "am_util.h"
+#include "PinNames.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -31,6 +32,18 @@ extern "C" {
 #include "objects_iom.h"
 #include "objects_spi.h"
 #include "objects_i2c.h"
+
+struct pwmout_s {
+    ap3_gpio_pad_t pad;
+    int period_us;
+    int pulse_width_us;
+    float c_clock_frq;
+    uint32_t timer;
+    uint32_t segment;
+    am_hal_ctimer_outputtype_e output;
+    uint32_t resolution;
+    // am_hal_gpio_drivestrength_e drive_strength;
+};
 
 #ifdef __cplusplus
 }
