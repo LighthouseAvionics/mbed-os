@@ -47,6 +47,7 @@ target_sources(mbed-apollo3
         device/isr.c
         device/lp_ticker.c
         device/pinmap.c
+        device/pwmout_api.c
         device/serial_api.c
         device/sleep.c
         device/spi_api.c

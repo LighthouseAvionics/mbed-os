@@ -8904,7 +8904,8 @@
             "FLASH",
             "SPI",
             "I2C",
-            "SLEEP"
+            "SLEEP",
+            "PWMOUT"
         ],
         "components": [
             "FLASHIAP"
