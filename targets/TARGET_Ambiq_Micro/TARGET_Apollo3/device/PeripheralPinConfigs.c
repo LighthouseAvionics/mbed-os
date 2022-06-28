@@ -414,7 +414,8 @@ const am_hal_gpio_pincfg_t g_AP3_PER_UART0_RX_45 = {
 //
 //*****************************************************************************
 const am_hal_gpio_pincfg_t g_AP3_PER_UART0_RX_49 = {
-    .uFuncSel            = AM_HAL_PIN_49_UART0RX
+    .uFuncSel            = AM_HAL_PIN_49_UART0RX,
+    .ePullup             = AM_HAL_GPIO_PIN_PULLUP_WEAK
 };
 
 //*****************************************************************************
